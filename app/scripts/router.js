@@ -10,6 +10,13 @@ var AppRouter = Backbone.Router.extend({
   },
 
   home: function(){
-    
+    ReactDOM.render(
+      React.createElement(),
+      document.getElementById('app')
+    );
   }
-})
+});
+
+var router = new AppRouter();
+
+module.exports = router;
