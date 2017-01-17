@@ -2,6 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Backbone = require('backbone');
 
+var Template = require('./components/colinmck.jsx').Template;
 
 
 var AppRouter = Backbone.Router.extend({
@@ -11,7 +12,7 @@ var AppRouter = Backbone.Router.extend({
 
   home: function(){
     ReactDOM.render(
-      React.createElement(),
+      React.createElement(Template),
       document.getElementById('app')
     );
   }
